@@ -1,0 +1,179 @@
+<jdt>
+    <houses>
+        <house id="stark">
+            <name>House Stark</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"/>
+            <words>
+                <word>
+                    Winter Is Coming
+                </word>
+            </words>
+            <regions>
+                <region>
+                    The North
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance house="targaryen"/>
+                <allegiance house="baratheon" when="formerly"/>
+                <allegiance sovereign="yes" when="formerly"/>
+            </allegiances>
+        </house>
+        <house id="lannister">
+            <name>House Lannister</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"/>
+            <words>
+                <word type="official">Hear Me Roar!</word>
+                <word type="common">A Lannister Always Pays His Debts</word>
+            </words>
+            <regions>
+                <region>
+                    The Crownlands
+                </region>
+                <region>
+                    The Westerlands
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance house="targaryen" when="formerly"/>
+                <allegiance house="baratheon" when="formerly"/>
+                <allegiance sovereign="yes" when="formerly"/>
+            </allegiances>
+        </house>
+        <house id="targaryen">
+            <name>House Targaryen</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320"/>
+            <words>
+                <word>Fire and Blood</word>
+            </words>
+            <regions>
+                <region>
+                    Dragonstone
+                </region>
+                <region>
+                    Casterly Rock
+                </region>
+                <region when="formerly">
+                    Bay of Dragons
+                </region>
+                <region when="claimant">
+                    The Crownlands
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance sovereign="yes" when="formerly"/>
+            </allegiances>
+        </house>
+        <house id="tyrell">
+            <name>House Tyrell</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035"/>
+            <words>
+                <word type="official">We Do Not Sow</word>
+                <word type="common">What Is Dead May Never Die</word>
+            </words>
+            <regions>
+                <region>
+                    Iron Islands
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance house="targaryen"/>
+                <allegiance house="baratheon" when="formerly"/>
+            </allegiances>
+        </house>
+        <house id="greyjoy">
+            <name>House Greyjoy</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836"/>
+            <words>
+                <word>Growing Strong</word>
+            </words>
+            <regions>
+                <region>
+                    The Reach
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance sovereign="yes"/>
+                <allegiance house="targaryen" when="formerly"/>
+                <allegiance house="baratheon" when="formerly"/>
+            </allegiances>
+        </house>
+        <house id="baratheon">
+            <name>House Baratheon of King's Landing</name>
+            <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708"/>
+            <words>
+                <word>Ours Is the Fury</word>
+            </words>
+            <regions>
+                <region>
+                    The Crownlands
+                </region>
+            </regions>
+            <allegiances>
+                <allegiance sovereign="yes"/>
+                <allegiance house="targaryen" when="formerly"/>
+            </allegiances>
+        </house>
+    </houses>
+    <characters>
+        <character>
+            <name>Eddard Stark</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest/scale-to-width-down/323?cb=20160730050722"/>
+            <status alive="no"/>
+            <culture>Northmen</culture>
+            <religions>
+                <religion>Old Gods of the Forest</religion>
+            </religions>
+            <house id="stark"/>
+        </character>
+        <character>
+            <name>Arya Stark</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/5/54/Arya_the_dragon_and_the_wolf_s7.jpg/revision/latest/scale-to-width-down/319?cb=20170828062911"/>
+            <status alive="yes"/>
+            <culture>Northmen</culture>
+            <religions>
+                <religion>Old Gods of the Forest</religion>
+                <religion>Faith of the Seven</religion>
+                <religion when="formerly">Many-Faced God</religion>
+            </religions>
+            <house id="stark"/>
+        </character>
+        <character>
+            <name>Cersei Lannister</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png/revision/latest/scale-to-width-down/323?cb=20170828071355"/>
+            <status alive="yes"/>
+            <culture>Andal</culture>
+            <house id="lannister"/>
+        </character>
+        <character>
+            <name>Daenerys I Targaryen</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"/>
+            <status alive="yes"/>
+            <culture>Valyrian</culture>
+            <house id="targaryen"/>
+        </character>
+        <character>
+            <name>Loras Tyrell</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"/>
+            <status alive="no"/>
+            <culture>Andal</culture>
+            <religion>Faith of the Seven</religion>
+            <house id="tyrell"/>
+        </character>
+        <character>
+            <name>Euron Greyjoy</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257"/>
+            <status alive="yes"/>
+            <culture>Ironborn</culture>
+            <house id="greyjoy"/>
+        </character>
+        <character>
+            <name>Robert I Baratheon</name>
+            <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127"/>
+            <status alive="no"/>
+            <culture>Andal</culture>
+            <religion>Faith of the Seven</religion>
+            <house id="baratheon"/>
+        </character>
+    </characters>
+</jdt>
