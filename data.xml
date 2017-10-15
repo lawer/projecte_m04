@@ -5,116 +5,145 @@
     <house id="stark">
       <name>House Stark</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142"/>
-      <words>
-        <word>
-          Winter Is Coming
-        </word>
-      </words>
+      <word>Winter Is Coming</word>
       <regions>
-        <region>
-          The North
-        </region>
+        <region>The North</region>
       </regions>
       <allegiances>
-        <allegiance house="targaryen"/>
-        <allegiance house="baratheon" when="formerly"/>
-        <allegiance sovereign="yes" when="formerly"/>
+        <![CDATA[<ul>
+  <li>Targaryen </li>
+  <li>Baratheon (formerly)</li>
+  <li>Sovereign (formerly)</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"You were born in the long summer, you've never known anything else. But now winter is truly coming. In the winter, we must protect ourselves, look after one another."</em>
+</p>
+<p>
+— Lord Eddard Stark.
+</p>]]>
+
+      </quote>
     </house>
     <house id="lannister">
       <name>House Lannister</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357"/>
-      <words>
-        <word type="official">Hear Me Roar!</word>
-        <word type="common">A Lannister Always Pays His Debts</word>
-      </words>
+      <word type="common">A Lannister Always Pays His Debts</word>
       <regions>
-        <region>
-          The Crownlands
-        </region>
-        <region>
-          The Westerlands
-        </region>
+        <region>The Crownlands</region>
+        <region>The Westerlands</region>
       </regions>
       <allegiances>
-        <allegiance house="targaryen" when="formerly"/>
-        <allegiance house="baratheon" when="formerly"/>
-        <allegiance sovereign="yes" when="formerly"/>
+        <![CDATA[<ul>
+  <li>Targaryen (formerly)</li>
+  <li>Baratheon (formerly)</li>
+  <li>Sovereign</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"You have to give it to the Lannisters – they may be the most pompous, ponderous cunts the gods ever suffered to walk the world, but they do have outrageous amounts of money."</em>
+</p>
+<p>
+―Renly Baratheon
+</p>]]>
+      </quote>
     </house>
     <house id="targaryen">
       <name>House Targaryen</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320"/>
-      <words>
-        <word>Fire and Blood</word>
-      </words>
+      <word>Fire and Blood</word>
       <regions>
-        <region>
-          Dragonstone
-        </region>
-        <region>
-          Casterly Rock
-        </region>
-        <region when="formerly">
-          Bay of Dragons
-        </region>
-        <region when="claimant">
-          The Crownlands
-        </region>
+        <region>Dragonstone</region>
+        <region>Casterly Rock</region>
+        <region when="formerly">Bay of Dragons</region>
+        <region when="claimant">The Crownlands</region>
       </regions>
       <allegiances>
-        <allegiance sovereign="yes" when="formerly"/>
+        <![CDATA[<ul>
+  <li>Sovereign</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"Half the Targaryens went mad didn't they? What's the saying? 'Every time a Targaryen is born the gods flip a coin.'"</em>
+</p>
+<p>
+―Cersei Lannister
+</p>]]>
+      </quote>
     </house>
     <house id="tyrell">
       <name>House Tyrell</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035"/>
-      <words>
-        <word type="official">We Do Not Sow</word>
-        <word type="common">What Is Dead May Never Die</word>
-      </words>
+      <word type="common">What Is Dead May Never Die</word>
       <regions>
-        <region>
-          Iron Islands
-        </region>
+        <region>Iron Islands</region>
       </regions>
       <allegiances>
-        <allegiance house="targaryen"/>
-        <allegiance house="baratheon" when="formerly"/>
+        <![CDATA[<ul>
+  <li>Targaryen</li>
+  <li>Baratheon (formerly)</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"Luckily for us Tyrells, our blood runs quite warm."</em>
+</p>
+<p>
+―Margaery Tyrell
+</p>]]>
+      </quote>
+
     </house>
     <house id="greyjoy">
       <name>House Greyjoy</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836"/>
-      <words>
-        <word>Growing Strong</word>
-      </words>
+      <word>Growing Strong</word>
       <regions>
-        <region>
-          The Reach
-        </region>
+        <region>The Reach</region>
       </regions>
       <allegiances>
-        <allegiance sovereign="yes"/>
-        <allegiance house="targaryen" when="formerly"/>
-        <allegiance house="baratheon" when="formerly"/>
+        <![CDATA[
+<ul>
+  <li>Sovereign</li>
+  <li>Targaryen (formerly)</li>
+  <li>Baratheon (formerly)</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"We are ironborn. We're not subjects, we're not slaves. We do not plow the field or toil in the mine. We take what is ours."</em>
+</p>
+<p>
+―Balon Greyjoy
+</p>]]>
+      </quote>
     </house>
     <house id="baratheon">
       <name>House Baratheon of King's Landing</name>
       <sigil src="https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708"/>
-      <words>
-        <word>Ours Is the Fury</word>
-      </words>
+
+      <word>Ours Is the Fury</word>
       <regions>
-        <region>
-          The Crownlands
-        </region>
+        <region>The Crownlands</region>
       </regions>
       <allegiances>
-        <allegiance sovereign="yes"/>
-        <allegiance house="targaryen" when="formerly"/>
+        <![CDATA[<ul>
+  <li>Sovereign</li>
+  <li>Targaryen (formerly)</li>
+</ul>]]>
       </allegiances>
+      <quote>
+        <![CDATA[<p>
+<em>"The King Joffrey Baratheon is neither a true king, nor a true Baratheon. He's your bastard son."</em>
+</p>
+<p>
+―Robb Stark to Jaime Lannister
+</p>]]>
+      </quote>
+
     </house>
   </houses>
   <characters>

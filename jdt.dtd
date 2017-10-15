@@ -2,7 +2,7 @@
 
         <!ELEMENT houses (house)*>
         <!ELEMENT house (
-                name, sigil, words, regions, allegiances
+                name, sigil, word, regions, allegiances, quote
                 )>
         <!ATTLIST house
                 id ID #REQUIRED>
@@ -10,7 +10,6 @@
         <!ELEMENT sigil (#PCDATA)>
         <!ATTLIST sigil
                 src CDATA #REQUIRED>
-        <!ELEMENT words (word)*>
         <!ELEMENT word (#PCDATA)>
         <!ATTLIST word
                 type (official | common) #IMPLIED>
@@ -18,12 +17,13 @@
         <!ELEMENT region (#PCDATA)>
         <!ATTLIST region
                 when (formerly | claimant) #IMPLIED>
-        <!ELEMENT allegiances (allegiance)*>
+        <!ELEMENT allegiances (#PCDATA)>
         <!ELEMENT allegiance (#PCDATA)>
         <!ATTLIST allegiance
                 house IDREF #IMPLIED
                 sovereign (yes | no) #IMPLIED
                 when (formerly) #IMPLIED>
+        <!ELEMENT quote (#PCDATA)>
 
         <!ELEMENT characters (character)*>
         <!ELEMENT character (
