@@ -1,0 +1,167 @@
+{
+  "houses": [
+    {
+      "id": "stark",
+      "name": "House Stark",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142",
+      "words": [
+        "Winter Is Coming"
+      ],
+      "regions": [
+        "The North"
+      ],
+      "allegiances": [
+        "targaryen",
+        "baratheon",
+        "sovereign"
+      ]
+    },
+    {
+      "id": "lannister",
+      "name": "House Lannister",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
+      "words": [
+        "Hear Me Roar!",
+        "A Lannister Always Pays His Debts"
+      ],
+      "regions": [
+        "The Crownlands",
+        "The Westerlands"
+      ],
+      "allegiances": [
+        "targaryen",
+        "baratheon",
+        "sovereign"
+      ]
+    },
+    {
+      "id": "targaryen",
+      "name": "House Targaryen",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320",
+      "words": [
+        "Fire and Blood"
+      ],
+      "regions": [
+        "Dragonstone",
+        "Casterly Rock",
+        "Bay of Dragons",
+        "The Crownlands"
+      ],
+      "allegiances": [
+        "sovereign"
+      ]
+    },
+    {
+      "id": "tyrell",
+      "name": "House Tyrell",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035",
+      "words": [
+        "We Do Not Sow",
+        "What Is Dead May Never Die"
+      ],
+      "regions": [
+        "Iron Islands"
+      ],
+      "allegiances": [
+        "targaryen",
+        "baratheon"
+      ]
+    },
+    {
+      "id": "greyjoy",
+      "name": "House Greyjoy",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836",
+      "words": [
+        "Growing Strong"
+      ],
+      "regions": [
+        "The Reach"
+      ],
+      "allegiances": [
+        "sovereign",
+        "targaryen",
+        "baratheon"
+      ]
+    },
+    {
+      "id": "baratheon",
+      "name": "House Baratheon of King's Landing",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708",
+      "words": [
+        "Ours Is the Fury"
+      ],
+      "regions": [
+        "The Crownlands"
+      ],
+      "allegiances": [
+        "sovereign",
+        "targaryen"
+      ]
+    }
+  ],
+  "characters": [
+    {
+      "name": "Eddard Stark",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest/scale-to-width-down/323?cb=20160730050722",
+      "alive": "no",
+      "culture": "Northmen",
+      "religions": [
+        "Old Gods of the Forest"
+      ],
+      "house": "stark"
+    },
+    {
+      "name": "Arya Stark",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/54/Arya_the_dragon_and_the_wolf_s7.jpg/revision/latest/scale-to-width-down/319?cb=20170828062911",
+      "alive": "yes",
+      "culture": "Northmen",
+      "religions": [
+        "Old Gods of the Forest",
+        "Faith of the Seven",
+        "Many-Faced God"
+      ],
+      "house": "stark"
+    },
+    {
+      "name": "Cersei Lannister",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png/revision/latest/scale-to-width-down/323?cb=20170828071355",
+      "alive": "yes",
+      "culture": "Andal",
+      "house": "lannister"
+    },
+    {
+      "name": "Daenerys I Targaryen",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128",
+      "alive": "yes",
+      "culture": "Valyrian",
+      "house": "targaryen"
+    },
+    {
+      "name": "Loras Tyrell",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128",
+      "alive": "no",
+      "culture": "Andal",
+      "religions": [
+        "Faith of the Seven"
+      ],
+      "house": "tyrell"
+    },
+    {
+      "name": "Euron Greyjoy",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257",
+      "alive": "yes",
+      "culture": "Ironborn",
+      "house": "greyjoy"
+    },
+    {
+      "name": "Robert I Baratheon",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127",
+      "alive": "no",
+      "culture": "Andal",
+      "religions": [
+        "Faith of the Seven"
+      ],
+      "house": "baratheon"
+    }
+  ]
+}
