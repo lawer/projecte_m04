@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE jdt SYSTEM "jdt.dtd">
 <jdt>
   <houses>
     <house id="stark">
@@ -125,7 +126,7 @@
       <religions>
         <religion>Old Gods of the Forest</religion>
       </religions>
-      <house id="stark"/>
+      <allegiance house="stark"/>
     </character>
     <character>
       <name>Arya Stark</name>
@@ -137,44 +138,48 @@
         <religion>Faith of the Seven</religion>
         <religion when="formerly">Many-Faced God</religion>
       </religions>
-      <house id="stark"/>
+      <allegiance house="stark"/>
     </character>
     <character>
       <name>Cersei Lannister</name>
       <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png/revision/latest/scale-to-width-down/323?cb=20170828071355"/>
       <status alive="yes"/>
       <culture>Andal</culture>
-      <house id="lannister"/>
+      <allegiance house="lannister"/>
     </character>
     <character>
       <name>Daenerys I Targaryen</name>
       <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"/>
       <status alive="yes"/>
       <culture>Valyrian</culture>
-      <house id="targaryen"/>
+      <allegiance house="targaryen"/>
     </character>
     <character>
       <name>Loras Tyrell</name>
       <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128"/>
       <status alive="no"/>
       <culture>Andal</culture>
-      <religion>Faith of the Seven</religion>
-      <house id="tyrell"/>
+      <religions>
+        <religion>Faith of the Seven</religion>
+      </religions>
+      <allegiance house="tyrell"/>
     </character>
     <character>
       <name>Euron Greyjoy</name>
       <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257"/>
       <status alive="yes"/>
       <culture>Ironborn</culture>
-      <house id="greyjoy"/>
+      <allegiance house="greyjoy"/>
     </character>
     <character>
       <name>Robert I Baratheon</name>
       <image src="https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127"/>
       <status alive="no"/>
       <culture>Andal</culture>
-      <religion>Faith of the Seven</religion>
-      <house id="baratheon"/>
+      <religions>
+        <religion>Faith of the Seven</religion>
+      </religions>
+      <allegiance house="baratheon"/>
     </character>
   </characters>
 </jdt>

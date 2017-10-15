@@ -1,0 +1,42 @@
+<!ELEMENT jdt (houses, characters)>
+
+        <!ELEMENT houses (house)*>
+        <!ELEMENT house (
+                name, sigil, words, regions, allegiances
+                )>
+        <!ATTLIST house
+                id ID #REQUIRED>
+        <!ELEMENT name (#PCDATA)>
+        <!ELEMENT sigil (#PCDATA)>
+        <!ATTLIST sigil
+                src CDATA #REQUIRED>
+        <!ELEMENT words (word)*>
+        <!ELEMENT word (#PCDATA)>
+        <!ATTLIST word
+                type (official | common) #IMPLIED>
+        <!ELEMENT regions (region)*>
+        <!ELEMENT region (#PCDATA)>
+        <!ATTLIST region
+                when (formerly | claimant) #IMPLIED>
+        <!ELEMENT allegiances (allegiance)*>
+        <!ELEMENT allegiance (#PCDATA)>
+        <!ATTLIST allegiance
+                house IDREF #IMPLIED
+                sovereign (yes | no) #IMPLIED
+                when (formerly) #IMPLIED>
+
+        <!ELEMENT characters (character)*>
+        <!ELEMENT character (
+                name, image, status, culture, religions?, allegiance
+                )>
+        <!ELEMENT image (#PCDATA)>
+        <!ATTLIST image
+                src CDATA #REQUIRED>
+        <!ELEMENT status (#PCDATA)>
+        <!ATTLIST status
+                alive (yes | no) #REQUIRED>
+        <!ELEMENT culture (#PCDATA)>
+        <!ELEMENT religions (religion)*>
+        <!ELEMENT religion (#PCDATA)>
+        <!ATTLIST religion
+                when (formerly) #IMPLIED>
