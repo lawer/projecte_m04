@@ -1,102 +1,74 @@
 {
   "houses": [
     {
-      "id": "stark",
       "name": "House Stark",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142",
-      "words": [
-        "Winter Is Coming"
-      ],
+      "word": "Winter Is Coming",
       "regions": [
         "The North"
       ],
-      "allegiances": [
-        "targaryen",
-        "baratheon",
-        "sovereign"
-      ]
+      "allegiances": "<ul>\n  <li>Targaryen </li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"You were born in the long summer, you've never known anything else. But now winter is truly coming. In the winter, we must protect ourselves, look after one another.\"</em>\n</p>\n<p>\n— Lord Eddard Stark.\n</p>",
+      "id": "stark"
     },
     {
-      "id": "lannister",
       "name": "House Lannister",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
-      "words": [
-        "Hear Me Roar!",
-        "A Lannister Always Pays His Debts"
-      ],
+      "word": "A Lannister Always Pays His Debts",
       "regions": [
         "The Crownlands",
         "The Westerlands"
       ],
-      "allegiances": [
-        "targaryen",
-        "baratheon",
-        "sovereign"
-      ]
+      "allegiances": "<ul>\n  <li>Targaryen (formerly)</li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign</li>\n</ul>",
+      "quote": "<p>\n<em>\"You have to give it to the Lannisters – they may be the most pompous, ponderous cunts the gods ever suffered to walk the world, but they do have outrageous amounts of money.\"</em>\n</p>\n<p>\n―Renly Baratheon\n</p>",
+      "id": "lannister"
     },
     {
-      "id": "targaryen",
       "name": "House Targaryen",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320",
-      "words": [
-        "Fire and Blood"
-      ],
+      "word": "Fire and Blood",
       "regions": [
         "Dragonstone",
         "Casterly Rock",
         "Bay of Dragons",
         "The Crownlands"
       ],
-      "allegiances": [
-        "sovereign"
-      ]
+      "allegiances": "<ul>\n  <li>Sovereign</li>\n</ul>",
+      "quote": "<p>\n<em>\"Half the Targaryens went mad didn't they? What's the saying? 'Every time a Targaryen is born the gods flip a coin.'\"</em>\n</p>\n<p>\n―Cersei Lannister\n</p>",
+      "id": "targaryen"
     },
     {
-      "id": "tyrell",
       "name": "House Tyrell",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035",
-      "words": [
-        "We Do Not Sow",
-        "What Is Dead May Never Die"
-      ],
+      "word": "What Is Dead May Never Die",
       "regions": [
         "Iron Islands"
       ],
-      "allegiances": [
-        "targaryen",
-        "baratheon"
-      ]
+      "allegiances": "<ul>\n  <li>Targaryen</li>\n  <li>Baratheon (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"Luckily for us Tyrells, our blood runs quite warm.\"</em>\n</p>\n<p>\n―Margaery Tyrell\n</p>",
+      "id": "tyrell"
     },
     {
-      "id": "greyjoy",
       "name": "House Greyjoy",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836",
-      "words": [
-        "Growing Strong"
-      ],
+      "word": "Growing Strong",
       "regions": [
         "The Reach"
       ],
-      "allegiances": [
-        "sovereign",
-        "targaryen",
-        "baratheon"
-      ]
+      "allegiances": "\n<ul>\n  <li>Sovereign</li>\n  <li>Targaryen (formerly)</li>\n  <li>Baratheon (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"We are ironborn. We're not subjects, we're not slaves. We do not plow the field or toil in the mine. We take what is ours.\"</em>\n</p>\n<p>\n―Balon Greyjoy\n</p>",
+      "id": "greyjoy"
     },
     {
-      "id": "baratheon",
       "name": "House Baratheon of King's Landing",
       "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708",
-      "words": [
-        "Ours Is the Fury"
-      ],
+      "word": "Ours Is the Fury",
       "regions": [
         "The Crownlands"
       ],
-      "allegiances": [
-        "sovereign",
-        "targaryen"
-      ]
+      "allegiances": "<ul>\n  <li>Sovereign</li>\n  <li>Targaryen (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"The King Joffrey Baratheon is neither a true king, nor a true Baratheon. He's your bastard son.\"</em>\n</p>\n<p>\n―Robb Stark to Jaime Lannister\n</p>",
+      "id": "baratheon"
     }
   ],
   "characters": [

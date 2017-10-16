@@ -15,12 +15,11 @@ body {
 
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Cinzel Decorative', cursive;
-    font-weight: bold;
+    font-weight: 400;
 }
 
 nav {
     font-family: 'Cinzel Decorative', cursive;
-    font-weight: bold;
 }
 
 .container {

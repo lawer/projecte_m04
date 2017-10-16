@@ -131,23 +131,23 @@
                 <xsl:value-of select="name"/>
               </h1>
               <div class="row">
-                <div class="col-12 col-sm-3">
+                <div class="col-12 col-md-3">
                   <img class="card-img-top" src="{sigil/@src}" alt="{name} sigil"/>
                 </div>
 
-                <div class="col-12 col-sm-9">
+                <div class="col-12 col-md-9">
                   <form>
                     <div class="form-group row">
-                      <label for="input-name" class="col-sm-2 col-form-label">
+                      <label for="input-name" class="col-md-3 col-form-label">
                         Name
                       </label>
-                      <input type="text" readonly="yes" class="form-control col-sm-10"
+                      <input type="text" readonly="yes" class="form-control col-md-9"
                              id="input-name" value="{name}"/>
                     </div>
 
                     <div class="form-group row">
-                      <label for="input-word" class="col-sm-2 col-form-label">Word</label>
-                      <textarea type="text" readonly="yes" class="form-control col-sm-10"
+                      <label for="input-word" class="col-sm-3 col-form-label">Word</label>
+                      <textarea type="text" readonly="yes" class="form-control col-md-9"
                                 id="input-word" rows="2">
                         <xsl:value-of select="word" disable-output-escaping="yes"/>
                       </textarea>
@@ -155,26 +155,26 @@
 
                     <xsl:for-each select="regions/region">
                       <div class="form-group row">
-                        <label for="region-{position()}" class="col-sm-2 col-form-label">
+                        <label for="region-{position()}" class="col-sm-3 col-form-label">
                           Region
                           <xsl:value-of select="position()"/>
                         </label>
-                        <input type="text" readonly="yes" class="form-control col-sm-10"
+                        <input type="text" readonly="yes" class="form-control col-md-9"
                                id="region-{position()}" value="{text()}"/>
                       </div>
                     </xsl:for-each>
 
                     <div class="form-group row">
-                      <label for="input-allegiances" class="col-sm-2 col-form-label">Allegiances</label>
-                      <textarea type="text" readonly="yes" class="form-control col-sm-10"
+                      <label for="input-allegiances" class="col-sm-3 col-form-label">Allegiances</label>
+                      <textarea type="text" readonly="yes" class="form-control col-md-9"
                                 id="input-allegiances" rows="5">
                         <xsl:value-of select="allegiances" disable-output-escaping="yes"/>
                       </textarea>
                     </div>
 
                     <div class="form-group row">
-                      <label for="input-quote" class="col-sm-2 col-form-label">Quote</label>
-                      <textarea type="text" readonly="yes" class="form-control col-sm-10"
+                      <label for="input-quote" class="col-sm-3 col-form-label">Quote</label>
+                      <textarea type="text" readonly="yes" class="form-control col-md-9"
                                 id="input-quote" rows="8">
                         <xsl:value-of select="quote" disable-output-escaping="yes"/>
                       </textarea>
