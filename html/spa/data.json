@@ -1,0 +1,139 @@
+{
+  "houses": [
+    {
+      "name": "House Stark",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142",
+      "word": "Winter Is Coming",
+      "regions": [
+        "The North"
+      ],
+      "allegiances": "<ul>\n  <li>Targaryen </li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"You were born in the long summer, you've never known anything else. But now winter is truly coming. In the winter, we must protect ourselves, look after one another.\"</em>\n</p>\n<p>\n— Lord Eddard Stark.\n</p>",
+      "id": "stark"
+    },
+    {
+      "name": "House Lannister",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
+      "word": "A Lannister Always Pays His Debts",
+      "regions": [
+        "The Crownlands",
+        "The Westerlands"
+      ],
+      "allegiances": "<ul>\n  <li>Targaryen (formerly)</li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign</li>\n</ul>",
+      "quote": "<p>\n<em>\"You have to give it to the Lannisters – they may be the most pompous, ponderous cunts the gods ever suffered to walk the world, but they do have outrageous amounts of money.\"</em>\n</p>\n<p>\n―Renly Baratheon\n</p>",
+      "id": "lannister"
+    },
+    {
+      "name": "House Targaryen",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Targaryen-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170510235320",
+      "word": "Fire and Blood",
+      "regions": [
+        "Dragonstone",
+        "Casterly Rock",
+        "Bay of Dragons",
+        "The Crownlands"
+      ],
+      "allegiances": "<ul>\n  <li>Sovereign</li>\n</ul>",
+      "quote": "<p>\n<em>\"Half the Targaryens went mad didn't they? What's the saying? 'Every time a Targaryen is born the gods flip a coin.'\"</em>\n</p>\n<p>\n―Cersei Lannister\n</p>",
+      "id": "targaryen"
+    },
+    {
+      "name": "House Tyrell",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/c/cf/House-Tyrell-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170108163035",
+      "word": "What Is Dead May Never Die",
+      "regions": [
+        "Iron Islands"
+      ],
+      "allegiances": "<ul>\n  <li>Targaryen</li>\n  <li>Baratheon (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"Luckily for us Tyrells, our blood runs quite warm.\"</em>\n</p>\n<p>\n―Margaery Tyrell\n</p>",
+      "id": "tyrell"
+    },
+    {
+      "name": "House Greyjoy",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/86/House-Greyjoy-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170523015836",
+      "word": "Growing Strong",
+      "regions": [
+        "The Reach"
+      ],
+      "allegiances": "\n<ul>\n  <li>Sovereign</li>\n  <li>Targaryen (formerly)</li>\n  <li>Baratheon (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"We are ironborn. We're not subjects, we're not slaves. We do not plow the field or toil in the mine. We take what is ours.\"</em>\n</p>\n<p>\n―Balon Greyjoy\n</p>",
+      "id": "greyjoy"
+    },
+    {
+      "name": "House Baratheon of King's Landing",
+      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/4/43/House-Baratheon-of-King%27s_Landing-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170519011708",
+      "word": "Ours Is the Fury",
+      "regions": [
+        "The Crownlands"
+      ],
+      "allegiances": "<ul>\n  <li>Sovereign</li>\n  <li>Targaryen (formerly)</li>\n</ul>",
+      "quote": "<p>\n<em>\"The King Joffrey Baratheon is neither a true king, nor a true Baratheon. He's your bastard son.\"</em>\n</p>\n<p>\n―Robb Stark to Jaime Lannister\n</p>",
+      "id": "baratheon"
+    }
+  ],
+  "characters": [
+    {
+      "name": "Eddard Stark",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/3/37/Eddard_Stark_infobox_new.jpg/revision/latest/scale-to-width-down/323?cb=20160730050722",
+      "alive": "no",
+      "culture": "Northmen",
+      "religions": [
+        "Old Gods of the Forest"
+      ],
+      "house": "stark"
+    },
+    {
+      "name": "Arya Stark",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/54/Arya_the_dragon_and_the_wolf_s7.jpg/revision/latest/scale-to-width-down/319?cb=20170828062911",
+      "alive": "yes",
+      "culture": "Northmen",
+      "religions": [
+        "Old Gods of the Forest",
+        "Faith of the Seven",
+        "Many-Faced God"
+      ],
+      "house": "stark"
+    },
+    {
+      "name": "Cersei Lannister",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/c/c3/Profile-CerseiLannister.png/revision/latest/scale-to-width-down/323?cb=20170828071355",
+      "alive": "yes",
+      "culture": "Andal",
+      "house": "lannister"
+    },
+    {
+      "name": "Daenerys I Targaryen",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128",
+      "alive": "yes",
+      "culture": "Valyrian",
+      "house": "targaryen"
+    },
+    {
+      "name": "Loras Tyrell",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/5/5f/Daenerys_Dragonpit.jpg/revision/latest?cb=20171015095128",
+      "alive": "no",
+      "culture": "Andal",
+      "religions": [
+        "Faith of the Seven"
+      ],
+      "house": "tyrell"
+    },
+    {
+      "name": "Euron Greyjoy",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/f/fc/Euron-Profile.PNG/revision/latest/scale-to-width-down/318?cb=20170916200257",
+      "alive": "yes",
+      "culture": "Ironborn",
+      "house": "greyjoy"
+    },
+    {
+      "name": "Robert I Baratheon",
+      "image": "https://vignette.wikia.nocookie.net/gameofthrones/images/d/d4/RobertBaratheon.jpg/revision/latest/scale-to-width-down/307?cb=20141119000127",
+      "alive": "no",
+      "culture": "Andal",
+      "religions": [
+        "Faith of the Seven"
+      ],
+      "house": "baratheon"
+    }
+  ]
+}

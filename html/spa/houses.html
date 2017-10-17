@@ -1,0 +1,47 @@
+<script id="housesTemplate" type="text/x-handlebars-template">
+    <h1>GOT Houses</h1>
+
+    <table class="table table-bordered table-condensed table-striped">
+        <thead>
+        <tr>
+            <th>Sigil</th>
+            <th>Name</th>
+            <th>Quote</th>
+        </tr>
+        </thead>
+        <tbody>
+        {{for houses}}
+        <tr>
+            <td><a href="#house:{{:id}}"><img src="{{:sigil}}" class="img-fluid"/></a></td>
+            <td class="centrat"><a href="#house:{{:id}}">{{:name}}</a></td>
+            <td>{{:quote}}</td>
+        </tr>
+        {{/for}}
+        </tbody>
+    </table>
+</script>
+
+<div id="target">
+</div>
+
+
+<script>
+  //|
+  //| view handler
+  //|
+  //| Note the name below shall match id of the section
+  //|
+  app.page("houses", function () {
+
+    // present the view - load data and show:
+    return function (params) {
+      $.getJSON("data.json")
+        .then(function (data) {
+          var template = $.templates("#housesTemplate");
+          var rendered = template.render(data);
+
+          $("#target").html(rendered);
+        })
+    }
+  });
+</script>
