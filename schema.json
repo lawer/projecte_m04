@@ -1,0 +1,39 @@
+{
+  "$schema": "http://json-schema.org/schema#",
+  "type": "object",
+  "properties": {
+    "houses": {
+      "type": "array"
+    },
+    "characters": {
+      "type": "array",
+      "additionalItems": true,
+      "items": {
+        "type": "object",
+        "required": [
+          "name",
+          "image",
+          "alive",
+          "culture"
+        ],
+        "properties": {
+          "name": {
+            "type": "string"
+          },
+          "image": {
+            "type": "string"
+          },
+          "alive": {
+            "type": "string"
+          },
+          "culture": {
+            "type": "string"
+          },
+          "house": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

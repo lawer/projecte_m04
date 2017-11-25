@@ -1,0 +1,121 @@
+<script id="modifyTemplate" type="text/x-handlebars-template">
+  <h1>Modify House</h1>
+  <div class="row">
+    <div class="col-12 col-md-9">
+      <form id="modify-form">
+
+        <div class="form-group row">
+          <label for="input-sigil" class="col-md-3 col-form-label">
+            Sigil
+          </label>
+          <input type="text" class="form-control col-md-9" id="input-sigil"
+                 name="sigil" value="{{:sigil}}">
+        </div>
+
+        <div class="form-group row">
+          <label for="input-name" class="col-md-3 col-form-label">
+            Name
+          </label>
+          <input type="text" class="form-control col-md-9" id="input-name"
+                 name="name" value="{{:name}}">
+        </div>
+
+        <div class="form-group row">
+          <label for="input-word"
+                 class="col-sm-3 col-form-label">Word</label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    id="input-word"
+                    name="word"
+                    rows="2">{{:word}}</textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="regions" class="col-sm-3 col-form-label">
+            Regions
+          </label>
+          <textarea type="text" class="form-control col-md-9"
+                    name="regions"
+                    id="regions">{{:regions}}</textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="input-allegiances"
+                 class="col-sm-3 col-form-label">Allegiances
+          </label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    name="allegiances"
+                    id="input-allegiances"
+                    rows="4">{{:allegiances}}</textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="input-quote"
+                 class="col-sm-3 col-form-label">
+            Quote
+          </label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    name="quote"
+                    id="input-quote"
+                    rows="4">{{:quote}}</textarea>
+        </div>
+
+        <button id="submit-button-modify" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+</script>
+
+<div id="target">
+</div>
+
+
+<script>
+  //|
+  //| view handler
+  //|
+  //| Note the name below shall match id of the section
+  //|
+  app.page("modify", function () {
+
+    // present the view - load data and show:
+    return function (param) {
+      $.get({
+        url: `http://127.0.0.1:5984/got/${param}`,
+      }).then(function (data) {
+        console.log(data);
+
+        var template = $.templates("#modifyTemplate");
+        var rendered = template.render(data);
+
+        $("#target").html(rendered);
+      });
+
+      $(document).on("submit", "#modify-form", function (event) {
+        var form = $(this);
+        event.preventDefault();
+
+        var formData = form.serializeObject();
+
+        $.get({
+          url: `http://127.0.0.1:5984/got/${param}`,
+        }).then(function (data) {
+          formData["_rev"] = data["_rev"];
+
+          return $.ajax({
+            url: `http://127.0.0.1:5984/got/${param}`,
+            data: JSON.stringify(formData),
+            type: 'PUT',
+          });
+        }).then(function (data) {
+          window.app("houses", undefined);
+        });
+
+      });
+    }
+  });
+</script>

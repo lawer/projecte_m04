@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather|Merriweather+Sans');
+
+* {
+    color: #555555;
+    font-family: 'Merriweather Sans', sans-serif;
+    display: block;
+    margin: 5px;
+}
+
+house name {
+    font-family: 'Merriweather', serif;
+    font-weight: bold;
+    background-color: #222222;
+    color: whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+
+house word {
+    border-color: #000000;
+    border-style: solid;
+}
+
+house region {
+    text-align: center;
+    color: lightgray;
+    background-color: #555555;
+    padding: 10px;
+    margin-left: 300px;
+    border-radius: 10px;
+}
+
+house quote {
+    display: none;
+}
+
+house allegiances {
+    display: none;
+}

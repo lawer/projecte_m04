@@ -1,0 +1,90 @@
+<script id="newTemplate" type="text/x-handlebars-template">
+  <h1>New House</h1>
+  <div class="row">
+    <div class="col-12 col-md-9">
+      <form>
+
+        <div class="form-group row">
+          <label for="input-sigil" class="col-md-3 col-form-label">
+            Sigil
+          </label>
+          <input type="text" class="form-control col-md-9" id="input-sigil">
+        </div>
+
+        <div class="form-group row">
+          <label for="input-name" class="col-md-3 col-form-label">
+            Name
+          </label>
+          <input type="text" class="form-control col-md-9" id="input-name">
+        </div>
+
+        <div class="form-group row">
+          <label for="input-word"
+                 class="col-sm-3 col-form-label">Word</label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    id="input-word"
+                    rows="2">
+                    </textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="regions" class="col-sm-3 col-form-label">
+            Regions
+          </label>
+          <textarea
+                  type="text" class="form-control col-md-9" id="regions">
+
+                    </textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="input-allegiances"
+                 class="col-sm-3 col-form-label">Allegiances
+          </label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    id="input-allegiances"
+                    rows="4">
+                    </textarea>
+        </div>
+
+        <div class="form-group row">
+          <label for="input-quote"
+                 class="col-sm-3 col-form-label">
+            Quote
+          </label>
+          <textarea type="text"
+                    class="form-control col-md-9"
+                    id="input-quote"
+                    rows="4">
+                    </textarea>
+        </div>
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </form>
+    </div>
+  </div>
+
+
+</script>
+
+<div id="target">
+</div>
+
+
+<script>
+  //|
+  //| view handler
+  //|
+  //| Note the name below shall match id of the section
+  //|
+  app.page("new", function () {
+
+    // present the view - load data and show:
+    return function (param) {
+      var rendered = $("#newTemplate").render();
+      $("#target").html(rendered);
+    }
+  });
+</script>
