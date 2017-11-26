@@ -1,42 +1,79 @@
 var express = require('express');
 var router = express.Router();
 
-var data = {
-  "houses": [
-    {
-      "name": "House Stark",
-      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Stark-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101103142",
-      "word": "Winter Is Coming",
-      "regions": [
-        "The North"
-      ],
-      "allegiances": "<ul>\n  <li>Targaryen </li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign (formerly)</li>\n</ul>",
-      "quote": "<p>\n<em>\"You were born in the long summer, you've never known anything else. But now winter is truly coming. In the winter, we must protect ourselves, look after one another.\"</em>\n</p>\n<p>\n— Lord Eddard Stark.\n</p>",
-      "id": "stark"
-    },
-    {
-      "name": "House Lannister",
-      "sigil": "https://vignette.wikia.nocookie.net/gameofthrones/images/8/8a/House-Lannister-Main-Shield.PNG/revision/latest/scale-to-width-down/350?cb=20170101095357",
-      "word": "A Lannister Always Pays His Debts",
-      "regions": [
-        "The Crownlands",
-        "The Westerlands"
-      ],
-      "allegiances": "<ul>\n  <li>Targaryen (formerly)</li>\n  <li>Baratheon (formerly)</li>\n  <li>Sovereign</li>\n</ul>",
-      "quote": "<p>\n<em>\"You have to give it to the Lannisters – they may be the most pompous, ponderous cunts the gods ever suffered to walk the world, but they do have outrageous amounts of money.\"</em>\n</p>\n<p>\n―Renly Baratheon\n</p>",
-      "id": "lannister"
-    }
-  ]
-};
+var knex = require('knex')({
+  client: 'sqlite3',
+  connection: {
+    filename: "./db.sqlite"
+  }
+});
 
+knex.on('query', function (queryData) {
+  console.log(queryData);
+});
+
+
+router.get('/schema/', function (req, res) {
+  knex.raw("SELECT name FROM sqlite_master WHERE type='table';")
+    .then(function (data) {
+      res.send(data);
+    });
+});
+
+router.get("/create/", function (req, res) {
+  knex.schema.createTableIfNotExists(
+    'houses', function (table) {
+      table.increments();
+      table.string('name');
+      table.string('sigil');
+      table.text('word');
+      table.text('regions');
+      table.text('allegiances');
+      table.text('quote');
+      table.timestamps();
+    }).then(function (data) {
+    res.send(data);
+  }).catch(function (error) {
+    res.send(error);
+  })
+});
+
+router.post("/populate/", function (req, res) {
+  var json = req.body;
+
+  for (let obj of json.houses) {
+    knex("houses").insert(obj)
+      .then(function (data) {
+        console.log(data);
+      })
+      .catch(function (error) {
+        console.log(error);
+      });
+  }
+  res.send("OK");
+});
 
 router.get("/houses/", function (req, res) {
-    res.json(data);
+  knex().select().from("houses")
+    .then(function (data) {
+      res.json({"houses": data});
+    });
   }
 );
 
 router.get("/houses/:id", function (req, res) {
-    res.json(data.houses[req.params["id"]]);
+  const id = req.params["id"];
+
+  console.log(id);
+  knex().select().from("houses").where('id', id)
+    .then(function (data) {
+      console.log(data);
+      res.json(data);
+    })
+    .catch(function (error) {
+      console.log(error);
+      res.send(error);
+    });
   }
 );
 
