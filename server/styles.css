@@ -1,0 +1,70 @@
+body {
+    padding-top: 6rem;
+    background: #ccc url("https://www.washingtonpost.com/graphics/entertainment/game-of-thrones/img/map_bg.png") fixed;
+    opacity: 0.95;
+    padding-bottom: 2em;
+}
+
+.container {
+    background: #fff;
+    padding: 1.5em 3em 1em 3em;
+    border-radius: 5px;
+}
+
+.table td {
+    vertical-align: middle;
+}
+
+.centrat {
+    text-align: center;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+nav {
+    font-family: 'Cinzel Decorative', cursive;
+}
+
+img {
+    filter: drop-shadow(10px -8px 5px rgba(0, 0, 0, .3))
+}
+
+label {
+    font-weight: bold;
+}
+
+.margin_bottom {
+    margin-bottom: 0.5em;
+}
+
+th {
+    text-align: center;
+}
+
+#name_th {
+    width: 10em;
+}
+
+#actions_th {
+    width: 10em;
+}
+
+td .btn {
+    margin: 1px;
+}
+
+.actions {
+    text-align: center;
+}
+
+@media (max-width: 576px) {
+    .container {
+        padding: 0.5em 1em 0.5em 1em;
+    }
+
+    td .actions {
+        text-align: center;
+    }
+}

@@ -105,7 +105,7 @@
                     id="input-quote"
                     rows="8">
                         {{:quote}}
-                    </textarea>
+          </textarea>
         </div>
       </form>
     </div>
@@ -135,7 +135,6 @@
     var $a = $(this);
     var id = parseInt($a.data("id"));
 
-
     $.getJSON("data.json", (data) => {
       var rendered = $("#houseTemplate").render(data.houses[id]);
       $("#container").html(rendered);
@@ -146,7 +145,7 @@
     $(document).on("click", ".house-detail", showHouse);
   }
 
-  $(document).ready(() => {
+  $(document).ready(function () {
     showHouses();
     setEventHandlers();
   });

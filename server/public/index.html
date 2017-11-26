@@ -1,0 +1,155 @@
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css"
+          integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Cinzel+Decorative:400,700" rel="stylesheet">
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top"><a class="navbar-brand" href="index.html">GoT</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault"
+            aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation"><span
+            class="navbar-toggler-icon"></span></button>
+    <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item"><a class="nav-link" href="#houses">Houses</a></li>
+            <li class="nav-item"><a class="nav-link" href="#characters">Characters</a></li>
+        </ul>
+    </div>
+</nav>
+
+<script id="housesTemplate" type="text/x-handlebars-template">
+    <div class="row">
+        <h1>GOT Houses</h1>
+    </div>
+
+    <div class="row margin_bottom">
+        <a id="#button-add" href="#new" class="btn btn-primary" role="button">New</a>
+    </div>
+
+    <div class="row">
+        <table id="houses" class="table table-bordered table-condensed table-striped responsive">
+            <thead>
+            <tr>
+                <th>Sigil</th>
+                <th id="name_th">Name</th>
+                <th>Quote</th>
+            </tr>
+            </thead>
+            <tbody>
+            {{for houses}}
+            <tr>
+                <td><a class="house-detail" data-id="{{:#index}}" href="#"><img src="{{:sigil}}" class="img-fluid"/></a>
+                </td>
+                <td class="centrat"><a class="house-detail" data-id="{{:#index}} href=" #">{{:name}}</a></td>
+                <td>{{:quote}}</td>
+            </tr>
+            {{/for}}
+            </tbody>
+        </table>
+    </div>
+</script>
+
+<script id="houseTemplate" type="text/x-handlebars-template">
+    <div class="row">
+        <h1>{{:name}}</h1>
+    </div>
+
+    <div class="row">
+        <div class="col-12 col-md-3"><img class="card-img-top"
+                                          src="{{:sigil}}"
+                                          alt="House {{:name}} sigil"></div>
+        <div class="col-12 col-md-9">
+            <form>
+                <div class="form-group row">
+                    <label for="input-name" class="col-md-3 col-form-label">
+                        Name
+                    </label>
+                    <input type="text" readonly="yes" class="form-control col-md-9" id="input-name"
+                           value="{{:name}}"></div>
+                <div class="form-group row">
+                    <label for="input-word"
+                           class="col-sm-3 col-form-label">Word</label>
+                    <textarea type="text"
+                              readonly="yes"
+                              class="form-control col-md-9"
+                              id="input-word"
+                              rows="2">{{:word}}</textarea>
+                </div>
+                <div class="form-group row">
+                    <label for="region" class="col-sm-3 col-form-label">
+                        Region 1
+                    </label>
+                    <input type="text" readonly="yes" class="form-control col-md-9" id="region"
+                           value="{{:}}">
+                </div>
+                <div class="form-group row">
+                    <label for="input-allegiances"
+                           class="col-sm-3 col-form-label">Allegiances
+                    </label>
+                    <textarea
+                            type="text" readonly="yes" class="form-control col-md-9" id="input-allegiances" rows="5">{{:allegiances}}
+          </textarea>
+                </div>
+                <div class="form-group row">
+                    <label for="input-quote"
+                           class="col-sm-3 col-form-label">
+                        Quote
+                    </label>
+                    <textarea type="text"
+                              readonly="yes"
+                              class="form-control col-md-9"
+                              id="input-quote"
+                              rows="8">
+                        {{:quote}}
+          </textarea>
+                </div>
+            </form>
+        </div>
+    </div>
+</script>
+
+<div id="container" class="container">
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jsviews/0.9.89/jsrender.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-serialize-object/2.5.0/jquery.serialize-object.min.js"></script>
+</body>
+
+<script>
+  function showHouses() {
+    $.getJSON("data.json", (data) => {
+      var rendered = $("#housesTemplate").render(data);
+      $("#container").html(rendered);
+    });
+  }
+
+  function showHouse(event) {
+    event.preventDefault();
+    var $a = $(this);
+    var id = parseInt($a.data("id"));
+
+    $.getJSON("data.json", (data) => {
+      var rendered = $("#houseTemplate").render(data.houses[id]);
+      $("#container").html(rendered);
+    });
+  }
+
+  function setEventHandlers() {
+    $(document).on("click", ".house-detail", showHouse);
+  }
+
+  $(document).ready(function () {
+    showHouses();
+    setEventHandlers();
+  });
+</script>
+
+</html>
